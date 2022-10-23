@@ -48,15 +48,16 @@ a:active { color: blue; }
 
 main { 
 	display: grid;
-  	grid-template-rows: [header-start] 1fr [heading1-start] .1fr [info1-start] 500px 
-  	[exp-start] .1fr [exp-content-start] 500px;
+  	grid-template-rows: [header-start] 1fr [heading1-start] .1fr [info1-start] 300px 
+  	[exp-start] .1fr [exp-content-start] 300px;
   	grid-template-columns: repeat(3, 1fr);
   	grid-template-areas: 
   	"photo photo contact"
   	"edu cw comp"
   	"jmu coursework skills"
   	"exp exp exp"
-  	"design ymca urec" ;
+  	"design ymca days"
+  	"camp urec urec2"
 }
 
   header { grid-area: photo;
@@ -79,6 +80,9 @@ main {
 #design { grid-area: design; }
 #ymca { grid-area: ymca; }
 #urec { grid-area: urec; }
+#days { grid-area: days; }
+#camp { grid-area: camp; }
+#urec2 { grid-area: urec2; }
 
 #edu, #cw, #comp, #exp {
 	background-color: white;
@@ -86,14 +90,14 @@ main {
 	padding: 5px;
 }
 
-#jmu, #coursework, #design, #ymca, #skills, #urec {
+#jmu, #coursework, #design, #ymca, #skills, #urec, #days, #urec2, #camp {
 	border-right: 3px solid white;
     margin-right: 8px;
     padding: 8px;
     border-radius: 15px;
             }
 
-#skills, #urec, #coursework, #ymca, #jmu, #design {
+#skills, #urec, #coursework, #ymca, #jmu, #design, #days, #urec2, #camp {
 	border-left: 3px solid white;
 	border-bottom: 3px solid white;
     margin-left: 8px;
