@@ -86,22 +86,19 @@ main {
 	padding: 5px;
 }
 
-#jmu, #coursework, #design, #ymca {
+#jmu, #coursework, #design, #ymca, #skills, #urec {
 	border-right: 3px solid white;
     margin-right: 8px;
     padding: 8px;
+    border-radius: 15px;
             }
 
-#jmu, #design {
-	border-right: 3px solid white;
-    margin-right: 8px;
-    padding: 8px;
-    		}
-
-#skills, #urec, #coursework, #ymca {
+#skills, #urec, #coursework, #ymca, #jmu, #design {
 	border-left: 3px solid white;
+	border-bottom: 3px solid white;
     margin-left: 8px;
     padding: 8px;
+    border-radius: 15px;
 }
 
 
