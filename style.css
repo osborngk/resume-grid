@@ -65,7 +65,7 @@ main {
             	grid-template-columns: 1fr 1fr;
             	grid-template-rows: 1fr;
             	grid-template-areas: "pic contact contact";
-            	padding: 9px;
+            	padding: 10px;
             }
 
 
