@@ -1,0 +1,108 @@
+
+
+body { background-color: rgba(44, 130, 201, .5); font-family: 'Roboto', sans-serif;
+	 font-size: 1rem; word-spacing: .1rem;}
+
+h1 { font-family: 'Merriweather', serif; font-size: 2rem; }
+
+h2 { font-family: 'Merriweather', serif; font-size: 1.5rem; text-transform: uppercase; 
+		color: #7C6E7F; margin-bottom: 5px;}
+
+h3 { font-family: 'Merriweather', serif; font-size: 1.25rem; margin-top: 10px; text-decoration: underline;}
+
+/*.space { margin-bottom: 50px; }
+
+.job { margin-bottom: 40px; }
+
+.white-space { margin-right: 750px; }*/
+
+#contact { text-align: center; background-image: url(pattern.png); 
+padding-top: 200px;}
+
+img { 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	width: 400px
+	 }
+
+li { margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	list-style: none;
+	background-image: url("dukedog.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 25px; }
+
+a:link { color: black; }
+
+a:visited { color: white; }
+
+a:hover { color: yellow; }
+
+a:active { color: blue; }
+
+main { 
+	display: grid;
+  	grid-template-rows: [header-start] 1fr [heading1-start] .1fr [info1-start] 500px 
+  	[exp-start] .1fr [exp-content-start] 500px;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-template-areas: 
+  	"photo photo contact"
+  	"edu cw comp"
+  	"jmu coursework skills"
+  	"exp exp exp"
+  	"design ymca urec" ;
+}
+
+  header { grid-area: photo;
+            	display: grid;
+            	grid-template-columns: 1fr 1fr;
+            	grid-template-rows: 1fr;
+            	grid-template-areas: "pic contact contact";
+            	padding: 9px;
+            }
+
+
+#photo { grid-area: pic; }
+#edu { grid-area: edu; }
+#cw { grid-area: cw; }
+#comp { grid-area: comp; }
+#jmu { grid-area: jmu; }
+#coursework { grid-area: coursework; }
+#skills { grid-area: skills; }
+#exp { grid-area: exp; }
+#design { grid-area: design; }
+#ymca { grid-area: ymca; }
+#urec { grid-area: urec; }
+
+#edu, #cw, #comp, #exp {
+	background-color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+#jmu, #coursework, #design, #ymca {
+	border-right: 3px solid white;
+    margin-right: 8px;
+    padding: 8px;
+            }
+
+#jmu, #design {
+	border-right: 3px solid white;
+    margin-right: 8px;
+    padding: 8px;
+    		}
+
+#skills, #urec, #coursework, #ymca {
+	border-left: 3px solid white;
+    margin-left: 8px;
+    padding: 8px;
+}
+
+
+
